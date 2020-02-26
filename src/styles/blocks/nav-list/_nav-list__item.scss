@@ -1,0 +1,29 @@
+.nav-list__item {
+  position: relative;
+  list-style: none;
+
+  &:hover {
+    .drop-box {
+      display: block;
+    }
+
+    .nav-list__link {
+      color: $c-red;
+    }
+
+    &.chevron:after {
+      top: 7px;
+      color: $c-red;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.chevron::after {
+    content: "\f078";
+    position: absolute;
+    top: 5px;
+    right: -1px;
+    color: $c-black;
+    font: normal normal normal 9px/1 FontAwesome;
+  }
+}

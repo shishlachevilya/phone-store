@@ -1,0 +1,14 @@
+.toggle-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+
+  button {
+    font-size: 36px;
+    color: $c-black;
+    border: none;
+    background: none;
+    outline: none;
+  }
+}

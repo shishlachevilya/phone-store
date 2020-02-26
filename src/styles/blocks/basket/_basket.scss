@@ -1,0 +1,17 @@
+.basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  max-width: 140px;
+  height: 44px;
+  margin-left: auto;
+  border: 2px solid $c-dark;
+  text-decoration: none;
+
+  @media ($m-extra-small) {
+    padding: 6px 0;
+    max-width: 100px;
+    margin: auto;
+  }
+}

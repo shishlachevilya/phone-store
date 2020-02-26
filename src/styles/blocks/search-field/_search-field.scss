@@ -1,0 +1,27 @@
+.search-field {
+  margin: 0 30px 0 0;
+
+  @media ($m-extra-small) {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+
+  input {
+    @include placeholder;
+    @include focus;
+    display: block;
+    width: 200px;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: $f-bold;
+    color: $c-black;
+    text-transform: uppercase;
+    border: 2px solid $c-dark;
+    outline: none;
+
+    @media ($m-extra-small) {
+      width: 100%;
+    }
+  }
+}

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "libs/bootstrap-grid";
 @import '~font-awesome/css/font-awesome.css';
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+@import "libs/swiper.min.css";
+@import "blocks/modules";
 
 * {
   box-sizing: border-box;
@@ -47,90 +49,8 @@ body {
 }
 
 
-.catalog {
-  padding: 50px 0 84px;
 
-  border-bottom: 1px solid #eee;
 
-  &__top {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 0 40px;
-
-    @media ($m-extra-small) {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  &__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-.search-field {
-  margin: 0 30px 0 0;
-
-  @media ($m-extra-small) {
-    margin: 0 0 20px;
-    width: 100%;
-  }
-
-  input {
-    display: block;
-    width: 200px;
-    height: 38px;
-    padding: 0 10px;
-
-    font-size: 12px;
-    font-weight: $f-bold;
-    color: $c-black;
-    text-transform: uppercase;
-
-    border: 2px solid $c-dark;
-    outline: none;
-
-    @include placeholder;
-    @include focus;
-
-    @media ($m-extra-small) {
-      width: 100%;
-    }
-
-  }
-}
-
-.clear {
-  &__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 38px;
-
-    font-size: 12px;
-    font-weight: $f-bold;
-    color: $c-dark;
-    text-transform: uppercase;
-
-    border: 2px solid $c-dark;
-    background: $c-white;
-    cursor: pointer;
-    outline: none;
-
-    &:hover {
-      background-color: $c-dark;
-      color: $c-white;
-    }
-
-    &:disabled {
-      opacity: .5;
-      pointer-events: none;
-    }
-  }
-}
 
 .card {
   position: relative;

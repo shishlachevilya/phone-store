@@ -1,0 +1,8 @@
+.basket__icn {
+  font-size: 23px;
+  color: $c-red;
+
+  @media ($m-extra-small) {
+    display: none;
+  }
+}

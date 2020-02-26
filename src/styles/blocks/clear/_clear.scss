@@ -1,0 +1,27 @@
+.clear {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: $f-bold;
+    color: $c-dark;
+    text-transform: uppercase;
+    border: 2px solid $c-dark;
+    background: $c-white;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: $c-dark;
+      color: $c-white;
+    }
+
+    &:disabled {
+      opacity: .5;
+      pointer-events: none;
+    }
+  }
+}

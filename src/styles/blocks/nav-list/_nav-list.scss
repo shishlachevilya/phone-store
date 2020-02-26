@@ -1,0 +1,14 @@
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0 11px 0 0;
+
+  &_mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 75px 0;
+  }
+}

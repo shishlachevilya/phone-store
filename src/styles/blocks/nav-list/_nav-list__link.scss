@@ -1,0 +1,27 @@
+.nav-list__link {
+  display: inline-flex;
+  margin: 0 10px;
+  font-size: 13px;
+  font-weight: $f-bold;
+  color: $c-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-red;
+  }
+
+  &.active {
+    color: $c-red;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 11px;
+      width: 10px;
+      height: 2px;
+      background-color: #e24545;
+    }
+  }
+}

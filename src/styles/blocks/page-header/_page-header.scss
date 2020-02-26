@@ -1,0 +1,10 @@
+.page-header {
+  &__title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: $f-bold;
+    color: $c-black;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+}

@@ -1,3 +1,4 @@
+import './js/libs/swiper.min';
 import './styles/main.scss';
 import cards from '../db/cards';
 import Catalog from './js/catalog';

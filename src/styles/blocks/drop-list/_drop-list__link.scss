@@ -1,0 +1,14 @@
+.drop-list__link {
+  display: inline-flex;
+  padding: 5px 10px;
+
+  font-size: 13px;
+  font-weight: $f-regular;
+  color: $c-gray;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-red;
+  }
+}
