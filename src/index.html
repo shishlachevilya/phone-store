@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> <%= htmlWebpackPlugin.options.title %> </title>
+</head>
+<body>
+<div class="wrapper">
+  <main class="main">
+
+    <div class="catalog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="catalog__top">
+              <div class="search-field">
+                <input type="text" placeholder="Search...">
+              </div>
+
+              <div class="clear">
+                <button class="clear__btn" data-card="clear" disabled>clear list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="catalog__wrap"></div>
+        </div>
+
+        <div class="row">
+          <div class="pagination">
+            <ul class="pagination-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>
