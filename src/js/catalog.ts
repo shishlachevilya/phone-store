@@ -33,7 +33,7 @@ class Catalog {
   }
 
   renderPageList(array: Array<Card>) {
-    const activeCards = array.filter((card: Card, index: number) => index >= this.activePage * 5 && index < this.activePage * 5 + 5);
+    const activeCards = array.filter((card: Card, index: number) => index >= this.activePage * 7 && index < this.activePage * 7 + 7);
 
     this.renderCards(activeCards);
     this.renderPagination(array);
@@ -83,7 +83,7 @@ class Catalog {
   renderPagination(array: Array<Card>) {
     let template = '';
 
-    for (let i = 0; i < array.length / 6; i++) {
+    for (let i = 0; i < array.length / 7; i++) {
       template += `
         <li>
           <span class="pagination-list__link ${i === this.activePage ? 'current' : ''}" data-card="change" data-page="${ i }">${ i + 1 }</span>

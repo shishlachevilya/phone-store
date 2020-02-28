@@ -1,8 +1,15 @@
 import './js/libs/swiper.min';
 import './styles/main.scss';
-import cards from '../db/cards';
+import { onceData } from '../phone-service/phone-service';
 import Catalog from './js/catalog';
 
 
 const catalogNode = document.querySelector('.catalog');
-new Catalog(catalogNode, cards);
+
+
+onceData
+  .then(body => {
+    new Catalog(catalogNode, body);
+  })
+  .catch((error) => {console.log(error)});
+
